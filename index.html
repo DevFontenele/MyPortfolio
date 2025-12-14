@@ -1,97 +1,489 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY portfolio</title>
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="active">
-          <i class="bx bx-home-alt"></i>
-          <span class="tooltip">Home</span>
-        </li>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-        <li>
-          <i class="bx bx-user"></i>
-          <span class="tooltip">About</span>
-        </li>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-        <li>
-          <i class="bx bx-detail"></i>
-          <span class="tooltip">Resume</span>
-        </li>
+<body>
+  <!-- navbar -->
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="active">
+        <i class="bx bx-home-alt"></i>
+        <span class="tooltip">Home</span>
+      </li>
 
-        <li>
-          <i class="bx bx-briefcase"></i>
-          <span class="tooltip">Portfolio</span>
-        </li>
+      <li>
+        <i class="bx bx-user"></i>
+        <span class="tooltip">About</span>
+      </li>
 
-        <li>
-          <i class="bx bx-envelope"></i>
-          <span class="tooltip">Contact</span>
-        </li>
-      </ul>
-    </nav>
+      <li>
+        <i class="bx bx-detail"></i>
+        <span class="tooltip">Resume</span>
+      </li>
 
-    <div class="container">
-      <div class="box">
-        <section class="section home">
-          <div class="home-info">
-            <h3>Olá, seja bem vindo!</h3>
-            <h1>Ryan Fontenele</h1>
-            <h3>Desenvolvedor full stack</h3>
-            <p class="desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-              quisquam cum porro magni, sed odit ut ratione obcaecati iste
-              perspiciatis beatae maxime amet harum? Voluptatem, voluptatum?
-              Culpa, ab. Porro, vero?
-            </p>
-            <div class="btn-sci">
-              <a href="#" class="btn">Download CV</a>
-              <div class="sci">
-                <a href="#">
-                  <i class='bx bxl-github'></i>
-                  <span class="tooltip">Github</span>
-                </a>
+      <li>
+        <i class="bx bx-briefcase"></i>
+        <span class="tooltip">Portfolio</span>
+      </li>
 
-                <a href="#">
-                  <i class='bx bxl-linkedin' ></i>
-                  <span class="tooltip">Linkedin</span>
-                </a>
+      <li>
+        <i class="bx bx-envelope"></i>
+        <span class="tooltip">Contact</span>
+      </li>
+    </ul>
+  </nav>
 
-                <a href="#">
-                  <i class='bx bxl-instagram' ></i>
-                  <span class="tooltip">Instagram</span>
-                </a>
+  <div class="container">
+    <div class="box">
+      <!-------------------------- Section Home ----------------------------------->
+      <section class="section home">
+        <div class="home-info">
+          <h3>Olá, seja bem vindo!</h3>
+          <h1>Ryan Fontenele</h1>
+          <h3>Desenvolvedor full stack</h3>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+            quisquam cum porro magni, sed odit ut ratione obcaecati iste
+            perspiciatis beatae maxime amet harum? Voluptatem, voluptatum?
+            Culpa, ab. Porro, vero?
+          </p>
+          <div class="btn-sci">
+            <a href="#" class="btn">Download CV</a>
+            <div class="sci">
+              <a href="#">
+                <i class="bx bxl-github"></i>
+                <span class="tooltip">Github</span>
+              </a>
 
-                <a href="#">
-                  <i class='bx bxl-whatsapp' ></i>
-                  <span class="tooltip">Whatsapp</span>
-                </a>
+              <a href="#">
+                <i class="bx bxl-linkedin"></i>
+                <span class="tooltip">Linkedin</span>
+              </a>
+
+              <a href="#">
+                <i class="bx bxl-instagram"></i>
+                <span class="tooltip">Instagram</span>
+              </a>
+
+              <a href="#">
+                <i class="bx bxl-whatsapp"></i>
+                <span class="tooltip">Whatsapp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-Wrapper">
+          <div class="img-box home-img">
+            <img src="img/ryan.png" alt="Avatar" />
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------- Section About -------------------------------------->
+      <section class="section about">
+        <div class="img-Wrapper">
+          <div class="img-box about-img">
+            <img src="img/ryan.png" alt="Avatar" />
+          </div>
+        </div>
+
+        <div class="about-info">
+          <h2 class="title">Resumo</h2>
+          <h3>Desenvolvedor Full-stack!</h3>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            minima dignissimos incidunt ipsam impedit? Ipsa asperiores iste
+            ducimus libero? Quas commodi culpa optio necessitatibus dolorum
+            veritatis odit, deserunt a temporibus.
+          </p>
+          <a href="#" class="btn">Veja mais</a>
+        </div>
+      </section>
+
+      <!-------------------------- section Resume -------------------------------->
+
+      <section class="section resume">
+        <h2 class="title">Resumo</h2>
+        <div class="tab-box">
+          <div class="tab-list resume-list active">
+            <h3>Experiência</h3>
+          </div>
+
+          <div class="tab-list resume-list">
+            <h3>Skills</h3>
+          </div>
+
+          <div class="tab-list resume-list">
+            <h3>Formação</h3>
+          </div>
+        </div>
+        <div class="tab-wrapper">
+          <div class="tab-grid resume-box experience active">
+            <div class="tab-item resume-item">
+              <h4>2022 - atual</h4>
+              <h4>Frontend Developer</h4>
+              <h4>google</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                assumenda magni officiis, quam incidunt rem omni.
+              </p>
+            </div>
+
+            <div class="tab-item resume-item">
+              <h4>2022 - atual</h4>
+              <h4>Frontend Developer</h4>
+              <h4>google</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                assumenda magni officiis, quam incidunt rem omni.
+              </p>
+            </div>
+
+            <div class="tab-item resume-item">
+              <h4>2022 - atual</h4>
+              <h4>Frontend Developer</h4>
+              <h4>google</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                assumenda magni officiis, quam incidunt rem omni.
+              </p>
+            </div>
+
+            <div class="tab-item resume-item">
+              <h4>2022 - atual</h4>
+              <h4>Frontend Developer</h4>
+              <h4>google</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                assumenda magni officiis, quam incidunt rem omni.
+              </p>
+            </div>
+
+            <div class="tab-item resume-item">
+              <h4>2022 - atual</h4>
+              <h4>Frontend Developer</h4>
+              <h4>google</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                assumenda magni officiis, quam incidunt rem omni.
+              </p>
+            </div>
+
+            <div class="tab-item resume-item">
+              <h4>2022 - atual</h4>
+              <h4>Frontend Developer</h4>
+              <h4>google</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                assumenda magni officiis, quam incidunt rem omni.
+              </p>
+            </div>
+          </div>
+
+          <div class="tab-grid resume-box skills">
+            <div class="tab-item resume-item">
+              <i class="bx bxl-html5"></i>
+              <p>HTML5</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-css3"></i>
+              <p>CSS3</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-javascript"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-react"></i>
+              <p>React.js</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-tailwind-css"></i>
+              <p>Tailwind.css</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-bootstrap"></i>
+              <p>Bootstrap</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-nodejs"></i>
+              <p>Node.js</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-python"></i>
+              <p>Python</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-postgresql"></i>
+              <p>Sql</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-mongodb"></i>
+              <p>MongoDB</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-typescript"></i>
+              <p>TypeScript</p>
+            </div>
+            <div class="tab-item resume-item">
+              <i class="bx bxl-vuejs"></i>
+              <p>Vue.js</p>
+            </div>
+          </div>
+
+          <div class="tab-grid resume-box education">
+            <div class="tab-item resume-item">
+              <h4>2023 - 2026</h4>
+              <h4>Analise e desenvolvimento de sistemas</h4>
+              <h4>Anhanguera</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                aperiam, pariatur consectetur, voluptas expedita et, quaerat
+                recusandae iusto necessitatibus asperiores perspiciatis maxime
+                nihil id dicta. Eum consectetur libero animi repudiandae.
+              </p>
+            </div>
+            <div class="tab-item resume-item">
+              <h4>2025</h4>
+              <h4>Algoritmos e logica de programação</h4>
+              <h4>Udemy</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                aperiam, pariatur consectetur, voluptas expedita et, quaerat
+                recusandae iusto necessitatibus asperiores perspiciatis maxime
+                nihil id dicta. Eum consectetur libero animi repudiandae.
+              </p>
+            </div>
+            <div class="tab-item resume-item">
+              <h4>2025</h4>
+              <h4>JavaScript e TypeScript Avançado</h4>
+              <h4>Udemy</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                aperiam, pariatur consectetur, voluptas expedita et, quaerat
+                recusandae iusto necessitatibus asperiores perspiciatis maxime
+                nihil id dicta. Eum consectetur libero animi repudiandae.
+              </p>
+            </div>
+            <div class="tab-item resume-item">
+              <h4>2025</h4>
+              <h4>React.js e Next.js</h4>
+              <h4>Udemy</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                aperiam, pariatur consectetur, voluptas expedita et, quaerat
+                recusandae iusto necessitatibus asperiores perspiciatis maxime
+                nihil id dicta. Eum consectetur libero animi repudiandae.
+              </p>
+            </div>
+            <div class="tab-item resume-item">
+              <h4>2025</h4>
+              <h4>Desenvolvedor Back-end</h4>
+              <h4>Mimo</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                aperiam, pariatur consectetur, voluptas expedita et, quaerat
+                recusandae iusto necessitatibus asperiores perspiciatis maxime
+                nihil id dicta. Eum consectetur libero animi repudiandae.
+              </p>
+            </div>
+            <div class="tab-item resume-item">
+              <h4>2025</h4>
+              <h4>Desenvolvedor Python</h4>
+              <h4>Mimo</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                aperiam, pariatur consectetur, voluptas expedita et, quaerat
+                recusandae iusto necessitatibus asperiores perspiciatis maxime
+                nihil id dicta. Eum consectetur libero animi repudiandae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------- section portfolio--------------------->
+
+      <section class="section portfolio">
+        <h2 class="title">Portfolio</h2>
+        <div class="tab-box">
+          <div class="tab-list portfolio-list active">
+            <h3>My Work</h3>
+          </div>
+          <div class="tab-list portfolio-list">
+            <h3>My Service</h3>
+          </div>
+
+        </div>
+        <div class="tab-wrapper">
+          <div class="tab-grid portfolio-box work active">
+
+            <div class="tab-item portfolio-item">
+              <div class="work-img">
+                <img src="img/noimage.png" alt="">
+              </div>
+              <div class="work-info">
+                <h4>Front-end project</h4>
+                <p>lafljabjfbwlfbalm aljfdbwlb</p>
+                <div class="tech-used">
+                  <p>HTML, CSS, JS</p>
+                </div>
+                <div class="portfolio-icon work-icon">
+                  <a href="#">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                  </a>
+                  <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="img-Wrapper">
-              <div class="img-box home-img">
-                <img src="" alt="">
+            <div class="tab-item portfolio-item">
+              <div class="work-img">
+                <img src="img/noimage.png" alt="">
+              </div>
+              <div class="work-info">
+                <h4>Front-end project</h4>
+                <p>lafljabjfbwlfbalm aljfdbwlb</p>
+                <div class="tech-used">
+                  <p>HTML, CSS, JS</p>
+                </div>
+                <div class="portfolio-icon work-icon">
+                  <a href="#">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                  </a>
+                  <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-item portfolio-item">
+              <div class="work-img">
+                <img src="img/noimage.png" alt="">
+              </div>
+              <div class="work-info">
+                <h4>Front-end project</h4>
+                <p>lafljabjfbwlfbalm aljfdbwlb</p>
+                <div class="tech-used">
+                  <p>HTML, CSS, JS</p>
+                </div>
+                <div class="portfolio-icon work-icon">
+                  <a href="#">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                  </a>
+                  <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-item portfolio-item">
+              <div class="work-img">
+                <img src="img/noimage.png" alt="">
+              </div>
+              <div class="work-info">
+                <h4>Front-end project</h4>
+                <p>lafljabjfbwlfbalm aljfdbwlb</p>
+                <div class="tech-used">
+                  <p>HTML, CSS, JS</p>
+                </div>
+                <div class="portfolio-icon work-icon">
+                  <a href="#">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                  </a>
+                  <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-item portfolio-item">
+              <div class="work-img">
+                <img src="img/noimage.png" alt="">
+              </div>
+              <div class="work-info">
+                <h4>Front-end project</h4>
+                <p>lafljabjfbwlfbalm aljfdbwlb</p>
+                <div class="tech-used">
+                  <p>HTML, CSS, JS</p>
+                </div>
+                <div class="portfolio-icon work-icon">
+                  <a href="#">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                  </a>
+                  <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-item portfolio-item">
+              <div class="work-img">
+                <img src="img/noimage.png" alt="">
+              </div>
+              <div class="work-info">
+                <h4>Front-end project</h4>
+                <p>lafljabjfbwlfbalm aljfdbwlb</p>
+                <div class="tech-used">
+                  <p>HTML, CSS, JS</p>
+                </div>
+                <div class="portfolio-icon work-icon">
+                  <a href="#">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                  </a>
+                  <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                  </a>
+                </div>
               </div>
             </div>
 
           </div>
-        </section>
-      </div>
+        </div>
+
     </div>
 
-    <script src="js/script.js"></script>
-  </body>
+    <div class="tab-grid portfolio-box service">
+      <div class="tab-item portfolio-item">
+        <p>service Test</p>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+  </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
