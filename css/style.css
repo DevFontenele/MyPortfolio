@@ -191,6 +191,58 @@ a:hover .tooltip,
     display: flex;
     align-items: center;
 }
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+
+/* IMPORTANTE */
+.modal-content {
+  max-height: 70vh;      /* Limite da altura */
+  overflow-y: auto;     /* Scroll interno */
+  overscroll-behavior: contain; /* evita scroll “vazar” */
+  background: #1f2933;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #00f5ff;
+  border-radius: 4px;
+}
+/* Botão fechar */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #00f5ff;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .btn {
     display: inline-flex;
     padding: 1.2rem 3rem ;
@@ -201,6 +253,7 @@ a:hover .tooltip,
     color: var(--bg-color);
     font-weight: 600;
     transition: .3s;
+    cursor: pointer;
 }
 
 .btn:hover{

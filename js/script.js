@@ -10,7 +10,25 @@ const portfolioLists = document.querySelectorAll(".portfolio-list");
 const portfolioBoxs = document.querySelectorAll(".portfolio-box");
 
 
+const openModal = document.getElementById("openModal");
+const modal = document.getElementById("modal");
+const closeModal = document.querySelector(".close");
 
+
+
+openModal.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
+
+closeModal.addEventListener("click", close);
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) close();
+});
+
+function close() {
+  modal.style.display = "none";
+}
 
 navs.forEach((nav, idx) => {
   nav.addEventListener("click", () => {
