@@ -272,11 +272,13 @@ a:hover .tooltip,
     font-size: 2.5rem;
     color: var(--main-color);
     margin-top: -1rem;
-}
 
+}
 .about-info .btn {
     padding: 1.2rem 4rem;
+    margin-top: 3rem;
 }
+
 
 .resume,
 .portfolio {
