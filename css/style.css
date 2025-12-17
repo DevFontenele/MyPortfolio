@@ -703,14 +703,12 @@ a:hover .tooltip,
         font-size: 50%;
     }
 
+   
     .container {
-        height: auto;
-        min-height: 100svh;
+        height: 100dvh;
+        min-height: 100dvh;
     }
 
-    .section {
-        min-height: 100svh;
-    }
 
     .nav {
         bottom: 0;
