@@ -707,14 +707,27 @@ a:hover .tooltip,
     }
 
    
-    .container {
-        height: 100dvh;
-        min-height: 100dvh;
+   .container {
+        height: 100vh;
+        min-height: 100vh;
     }
 
+    body {
+        overscroll-behavior: none;
+    }
+
+    .box {
+        will-change: transform;
+    }
 
     .nav {
-        bottom: 0;
+        transform: translate3d(-50%, 0, 0);
+        will-change: transform;
+        animation-duration: .6s;
+    }
+
+    .tab-grid {
+        -webkit-overflow-scrolling: touch;
     }
 
     .home,
@@ -746,36 +759,11 @@ a:hover .tooltip,
         padding-bottom: 16rem;
     }
 }
-@media (max-width: 768px) {
-
-    .container {
-        height: 100vh;
-        min-height: 100vh;
-    }
-
-    body {
-        overscroll-behavior: none;
-    }
-
-    .box {
-        will-change: transform;
-    }
-
-    .nav {
-        transform: translate3d(-50%, 0, 0);
-        will-change: transform;
-        animation-duration: .6s;
-    }
-
-    .tab-grid {
-        -webkit-overflow-scrolling: touch;
-    }
-}
 
 @media screen and (max-width: 600px) {
     .container {
-        height: 100dvh;
-        min-height: 100dvh;
+        height: 100vh;
+        min-height: 100vh;
     }
     .tab-grid {
     -webkit-overflow-scrolling: touch;
@@ -796,9 +784,9 @@ a:hover .tooltip,
 }
 
 @media screen and (max-width: 400px) {
-    .container {
-        height: 100dvh;
-        min-height: 100dvh;
+   .container {
+        height: 100vh;
+        min-height: 100vh;
     }
     .tab-grid {
     -webkit-overflow-scrolling: touch;
