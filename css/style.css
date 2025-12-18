@@ -42,10 +42,12 @@ html {
 }
 
 body {
+    
     background-color: black;
     color: var(--white-color);
     overflow-x: hidden;
     overflow-y: auto;
+    overscroll-behavior: none;
     
 }
 
@@ -130,6 +132,7 @@ a:hover .tooltip,
     position: relative;
     width: 100%;
     height: 100%;
+    will-change: transform;
     transform-style: preserve-3d;
     transform-origin: 50% 50% -50vw ;
     transform: rotateY(0deg);
@@ -703,12 +706,11 @@ a:hover .tooltip,
         font-size: 50%;
     }
 
-    
+   
     .container {
-        min-height: 100svh;
-         
+        height: 100dvh;
+        min-height: 100dvh;
     }
-
 
 
     .nav {
@@ -721,6 +723,9 @@ a:hover .tooltip,
         justify-content: center;
         gap: 2rem;
         padding-bottom: 6rem;
+    }
+    .tab-grid {
+    -webkit-overflow-scrolling: touch;
     }
 
     .about {
@@ -741,11 +746,39 @@ a:hover .tooltip,
         padding-bottom: 16rem;
     }
 }
+@media (max-width: 768px) {
+
+    .container {
+        height: 100vh;
+        min-height: 100vh;
+    }
+
+    body {
+        overscroll-behavior: none;
+    }
+
+    .box {
+        will-change: transform;
+    }
+
+    .nav {
+        transform: translate3d(-50%, 0, 0);
+        will-change: transform;
+        animation-duration: .6s;
+    }
+
+    .tab-grid {
+        -webkit-overflow-scrolling: touch;
+    }
+}
 
 @media screen and (max-width: 600px) {
-     .container {
-        min-height: 100svh;
-         
+    .container {
+        height: 100dvh;
+        min-height: 100dvh;
+    }
+    .tab-grid {
+    -webkit-overflow-scrolling: touch;
     }
     .resume,
     .portfolio {
@@ -763,9 +796,12 @@ a:hover .tooltip,
 }
 
 @media screen and (max-width: 400px) {
-     .container {
-        min-height: 100svh;
-         
+    .container {
+        height: 100dvh;
+        min-height: 100dvh;
+    }
+    .tab-grid {
+    -webkit-overflow-scrolling: touch;
     }
     .nav {
         width: 100%;
