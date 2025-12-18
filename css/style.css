@@ -703,11 +703,12 @@ a:hover .tooltip,
         font-size: 50%;
     }
 
-   
+    
     .container {
-        height: 100dvh;
-        min-height: 100dvh;
+        min-height: 100svh;
+         
     }
+
 
 
     .nav {
@@ -742,9 +743,9 @@ a:hover .tooltip,
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        height: 100dvh;
-        min-height: 100dvh;
+     .container {
+        min-height: 100svh;
+         
     }
     .resume,
     .portfolio {
@@ -762,9 +763,9 @@ a:hover .tooltip,
 }
 
 @media screen and (max-width: 400px) {
-    .container {
-        height: 100dvh;
-        min-height: 100dvh;
+     .container {
+        min-height: 100svh;
+         
     }
     .nav {
         width: 100%;
